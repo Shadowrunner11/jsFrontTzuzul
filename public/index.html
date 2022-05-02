@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.sandbox.google.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="styles.css">
+    <title>Inicio</title>
+
+</head>
+<body>
+    <header class="header flex">
+        <nav class="header__navbar flex">
+            <h2 class="header__brand">Logo</h2>
+        
+            <ul class="header__menu flex ">
+                
+                <li class="header__item">Inicio</li>
+                <li class="header__item">Juegos</li>
+                <li class="header__item">Comentarios</li>
+                <li class="profile"><a href="./pages/login.html">Iniciar</a></li>
+            </ul>
+            <form action="" class="header__search flex">
+                <span class="material-symbols-outlined header__icon">search</span>
+                <input type="text" class="header__input">
+            </form>
+            <button class="hamburger active">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
+            </button>
+        </nav>
+    </header>
+    <main>
+        <section class="container__apps">
+            <div>
+                <h1 class="app__title"></h1>
+            </div>
+            <div class="app__collection">
+                <div class="app__card">
+                    <picture>
+                        <img src="https://img.freepik.com/vector-gratis/elementos-concepto-streamer-juego-ilustrados_23-2148932487.jpg?t=st=1651450516~exp=1651451116~hmac=c9989935174d38ee7e665206095a1460dd6611ff1a593e1b5062a902eb8a5736&w=740" alt="">
+                    </picture>
+                    <div class="card__description">
+
+                        <h3>Juegos interactivos</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="app__card">
+                    <picture>
+
+                        <img src="https://img.freepik.com/vector-gratis/ilustracion-concepto-actualizacion-estado_114360-1567.jpg?t=st=1651450617~exp=1651451217~hmac=bb813cd4f8756734076c9f7a93be9843df1686d4f1ff85f71e7c25d0dbd814d2&w=996" alt="">
+                    </picture>
+                    <div class="card__description">
+
+                        <h3>Comentarios</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="app__card">
+                    <picture>
+
+                        <img src="https://img.freepik.com/vector-gratis/informacion-marketing-empresarial-monedas-hojas_24877-54767.jpg?t=st=1651450791~exp=1651451391~hmac=46154ae23a2a35671b0b97f4af2c7dee8e8cbebda2d63a497b53a43f21981300&w=996" alt="">
+                    </picture>
+                    <div class="card__description">
+                        <h3>Puntos consegidos</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="app__card">
+                    <picture>
+
+                        <img src="https://img.freepik.com/vector-gratis/lupa-busqueda-archivos_52683-22967.jpg?t=st=1651450860~exp=1651451460~hmac=0d5cbd5c02888d552f65ed65068613af2223232d762ffa8be7f3a555cb827658&w=740" alt="">
+                    </picture>
+                    <div class="card__description">
+
+                        <p></p>
+                        <h3>Información</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+</body>
+<script>
+    const menubtn = document.querySelector('.hamburger');
+    const menu = document.querySelector('.header__menu');
+
+    menubtn.addEventListener('click', ()=>{
+        menubtn.classList.toggle('active')
+        menu.classList.toggle('display')
+    })
+</script>
+</html>
